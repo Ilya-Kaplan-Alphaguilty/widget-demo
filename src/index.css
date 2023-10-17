@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./main-bg-d-2x.webp'), #101313;
+  background-size: cover;
+  color: aliceblue;
 }
 
 code {
