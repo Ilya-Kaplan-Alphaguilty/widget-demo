@@ -1,4 +1,4 @@
-#iframeContainer .loader {
+#iframeContainerOpen .loader {
     z-index: 1001 !important;
     opacity: 1 !important;
     background: #101313 !important;
@@ -17,25 +17,25 @@
     }
 }
 
-#iframeContainer .MuiCircularProgress-svg {
+#iframeContainerOpen .MuiCircularProgress-svg {
     display: block;
     width: 40px;
     height: 40px;
     animation: 1.4s linear infinite MuiCircularProgress-keyframes-circular-rotate;
 }
 
-#iframeContainer .MuiCircularProgress-circle {
+#iframeContainerOpen .MuiCircularProgress-circle {
     stroke: #87f696;
     stroke-dasharray: 80px, 200px;
     stroke-dashoffset: 0;
 }
 
-#iframeContainer {
+#iframeContainerOpen {
     /* position: relative; */
     z-index: 1000;
 }
 
-#iframeContainer .firstWrapper {
+#iframeContainerOpen .firstWrapper {
     position: fixed;
     right: 20px;
     bottom: 40px;
@@ -46,13 +46,13 @@
     opacity: 1;
 }
 
-#iframeContainer .secondWrapper {
+#iframeContainerOpen .secondWrapper {
     border: 0.2px solid #87f696;
     border-radius: 30px;
     padding: 2px;
 }
 
-#iframeContainer #openQuestButton {
+#iframeContainerOpen #openQuestButton {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -68,21 +68,21 @@
     line-height: 16px;
 }
 
-#iframeContainer #alphaguilty-iframe.closed {
+#iframeContainerOpen #alphaguilty-iframe.closed {
     width: 0;
     height: 0;
 }
 
-#iframeContainer.open .firstWrapper {
+#iframeContainerOpen.open .firstWrapper {
     display: none;
     opacity: 0;
 }
 
-#iframeContainer #openQuestButton .icon {
+#iframeContainerOpen #openQuestButton .icon {
     margin-right: 5px;
 }
 
-#iframeContainer .iframe {
+#iframeContainerOpen .iframe {
     width: 0;
     height: 0;
     position: fixed;
@@ -94,19 +94,19 @@
     transition: opacity 1s ease;
 }
 
-#iframeContainer.open .iframe {
+#iframeContainerOpen.open .iframe {
     width: 100vw;
     height: 100%;
     opacity: 1;
 }
 
-#iframeContainer #alphaguiltyCloseButton {
+#iframeContainerOpen #alphaguiltyCloseButton {
     display: none;
     opacity: 0;
     transition: opacity 1s ease;
 }
 
-#iframeContainer.open #alphaguiltyCloseButton {
+#iframeContainerOpen.open #alphaguiltyCloseButton {
     cursor: pointer;
     display: block;
     background: 0 0;
@@ -123,7 +123,7 @@
 }
 
 @media screen and (min-width: 744px) {
-    #iframeContainer.open .iframe {
+    #iframeContainerOpen.open .iframe {
         width: 360px;
         height: 70%;
         top: 50%;
@@ -133,60 +133,60 @@
         border: 0.5px solid #87f696;
     }
 
-    #iframeContainer.open #alphaguiltyCloseButton {
+    #iframeContainerOpen.open #alphaguiltyCloseButton {
         bottom: calc(70% + 4px);
         right: 53px;
     }
 }
 
 @media screen and (min-width: 834px) {
-    #iframeContainer.open .iframe {
+    #iframeContainerOpen.open .iframe {
         width: 550px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    #iframeContainer.open #alphaguiltyCloseButton {
+    #iframeContainerOpen.open #alphaguiltyCloseButton {
         bottom: calc(70% - 6px);
         right: 63px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    #iframeContainer.open .iframe {
+    #iframeContainerOpen.open .iframe {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    #iframeContainer.open #alphaguiltyCloseButton {
+    #iframeContainerOpen.open #alphaguiltyCloseButton {
         bottom: calc(70% + 22px);
         right: 76px;
     }
 }
 
-#iframeContainer.closing .firstWrapper {
+#iframeContainerOpen.closing .firstWrapper {
     display: block;
     opacity: 1;
     transition: opacity 1s ease;
 }
 
-#iframeContainer.closing .iframe {
+#iframeContainerOpen.closing .iframe {
     width: 0;
     height: 0;
     opacity: 0;
     transition: opacity 1s ease;
 }
 
-#iframeContainer.closing #alphaguiltyCloseButton {
+#iframeContainerOpen.closing #alphaguiltyCloseButton {
     display: none;
     opacity: 0;
     transition: opacity 1s ease;
 }
 
 @media screen and (min-width: 300px) {
-    #iframeContainer.closing .iframe {
+    #iframeContainerOpen.closing .iframe {
         width: 100%;
         height: 100%;
         right: 0;
@@ -195,14 +195,14 @@
         border: 0.5px solid #87f696;
     }
 
-    #iframeContainer.closing #alphaguiltyCloseButton {
+    #iframeContainerOpen.closing #alphaguiltyCloseButton {
         bottom: calc(70% + 4px);
         right: 53px;
     }
 }
 
 @media screen and (min-width: 744px) {
-    #iframeContainer.closing .iframe {
+    #iframeContainerOpen.closing .iframe {
         width: 360px;
         height: 70%;
         right: 37px;
@@ -211,32 +211,32 @@
         border: 0.5px solid #87f696;
     }
 
-    #iframeContainer.closing #alphaguiltyCloseButton {
+    #iframeContainerOpen.closing #alphaguiltyCloseButton {
         bottom: calc(70% + 4px);
         right: 53px;
     }
 }
 
 @media screen and (min-width: 834px) {
-    #iframeContainer.closing .iframe {
+    #iframeContainerOpen.closing .iframe {
         width: 550px;
         right: 47px;
         bottom: 32px;
     }
 
-    #iframeContainer.closing #alphaguiltyCloseButton {
+    #iframeContainerOpen.closing #alphaguiltyCloseButton {
         bottom: calc(70% - 6px);
         right: 63px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    #iframeContainer.closing .iframe {
+    #iframeContainerOpen.closing .iframe {
         bottom: 60px;
         right: 60px;
     }
 
-    #iframeContainer.closing #alphaguiltyCloseButton {
+    #iframeContainerOpen.closing #alphaguiltyCloseButton {
         bottom: calc(70% + 22px);
         right: 76px;
     }

@@ -2,7 +2,7 @@ import "./open.css";
 
 const Open = () => {
   return (
-    <div id="iframeContainer" className="open">
+    <div id="iframeContainerOpen" className="open">
       <iframe
         title="Iframe"
         src="https://alphaguilty.io/iframe/alphaguilty-onboarding"
